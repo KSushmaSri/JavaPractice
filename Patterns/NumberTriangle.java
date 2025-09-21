@@ -11,6 +11,14 @@ public class NumberTriangle {
             }
             System.out.println();
         }
+        //REPEATED ROW NUMBERS
+        System.out.println("Repeated Row Numbers:");
+        for(int i=0;i<n;i++){
+            for(int j=0;j<=i;j++){
+                System.out.print(i+1);
+            }
+            System.out.println();
+        } 
         sc.close();
     }
 }
