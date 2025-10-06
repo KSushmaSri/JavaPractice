@@ -24,6 +24,13 @@ public class TwoD {
             }
             System.out.println();
         }
-        
+        //SUM OF MATRIX ELEMENTS
+        int sum=0;
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                sum=sum+mat[i][j];
+            }
+        }
+        System.out.print("The sum of the matrix is:"+sum);
     }
 }
