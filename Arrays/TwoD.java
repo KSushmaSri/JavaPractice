@@ -39,16 +39,32 @@ public class TwoD {
             for(int j=0;j<m;j++){
                 r_sum=r_sum+mat[i][j];
             }
-            System.out.println("   Sum of "+(i+1)+" row is "+r_sum);
+            System.out.println("   Sum of Row "+(i+1)+" is "+r_sum);
         }
-        //Col
+        //Column Wise Sum
         System.out.println("|Sum of Each Column|");
         for(int j=0;j<m;j++){
             int c_sum=0;
             for(int i=0;i<n;i++){
                 c_sum+=mat[i][j];
             }
-            System.out.println("   Sum of "+(j+1)+" Column is "+c_sum);
+            System.out.println("   Sum of Column "+(j+1)+" is "+c_sum);
         }
+        //Max and Min
+        int max=mat[0][0];
+        int min=mat[0][0];
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                if (mat[i][j]>max){
+                    max=mat[i][j];
+                }
+                if (mat[i][j]<min) {
+                    min=mat[i][j];
+                }
+            }
+        }
+        System.out.println("Maximum element: "+max);
+        System.out.println("Minimum element: "+min);
+
     }
 }
