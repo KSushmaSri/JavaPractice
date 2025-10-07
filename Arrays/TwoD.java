@@ -31,6 +31,14 @@ public class TwoD {
                 sum=sum+mat[i][j];
             }
         }
-        System.out.print("The sum of the matrix is:"+sum);
+        System.out.println("The sum of the matrix is:"+sum);
+        //Row-Wise sum
+        for(int i=0;i<n;i++){
+            int r_sum=0;
+            for(int j=0;j<m;j++){
+                r_sum=r_sum+mat[i][j];
+            }
+            System.out.println("Sum of "+(i+1)+" row is "+r_sum);
+        }
     }
 }
